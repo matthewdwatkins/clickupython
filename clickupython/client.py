@@ -739,6 +739,8 @@ class ClickUpClient:
         description: str = None,
         status: str = None,
         priority: int = None,
+        due_date: int = None,
+        start_date: int = None,
         time_estimate: int = None,
         archived: bool = None,
         add_assignees: List[str] = None,
