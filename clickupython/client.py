@@ -770,6 +770,12 @@ class ClickUpClient:
             raise exceptions.ClickupClientError(
                 "Priority must be in range of 0-4.", "Priority out of range"
             )
+        
+        if due_date:
+            due_date = fuzzy_time_to_unix(due_date)
+
+        if start_date:
+            start_date = fuzzy_time_to_unix(start_date)
 
         arguments = {}
         arguments.update(vars())
