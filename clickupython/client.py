@@ -685,6 +685,7 @@ class ClickUpClient:
         tags: [] = None,
         status: str = None,
         due_date: str = None,
+        due_date_time: bool = None,
         start_date: str = None,
         notify_all: bool = True,
     ) -> models.Task:
@@ -740,6 +741,7 @@ class ClickUpClient:
         status: str = None,
         priority: int = None,
         due_date: int = None,
+        due_date_time: bool = None,
         start_date: int = None,
         time_estimate: int = None,
         archived: bool = None,
