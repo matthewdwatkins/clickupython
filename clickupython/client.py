@@ -687,6 +687,7 @@ class ClickUpClient:
         due_date: str = None,
         due_date_time: bool = None,
         start_date: str = None,
+        start_date_time: bool = None,
         notify_all: bool = True,
     ) -> models.Task:
 
@@ -743,6 +744,7 @@ class ClickUpClient:
         due_date: int = None,
         due_date_time: bool = None,
         start_date: int = None,
+        start_date_time: bool = None,
         time_estimate: int = None,
         archived: bool = None,
         add_assignees: List[str] = None,
